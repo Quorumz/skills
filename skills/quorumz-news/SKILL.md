@@ -1,6 +1,6 @@
 ---
 name: quorumz-news
-description: Current geo-tagged world news for agents, split into viewpoints with a count of the media, social and on-the-ground posts behind each. Use when a user asks what people are saying about a country, conflict or public story, wants the distinct positions on a story, or wants an early signal ahead of the wider press. Pay per call with an API key (free 7-day trial) or with x402 in USDC on Base.
+description: Current geo-tagged world news for agents, split into viewpoints with a count of the media, social and on-the-ground posts behind each. Use when a user asks what people are saying about a country, conflict or public story, wants the distinct positions on a story, or wants an early signal ahead of the wider press. Pay per call with an API key (free 7-day trial) or with x402 in USDC on Base, Polygon or Arbitrum.
 version: 1.0.0
 metadata:
   openclaw:
@@ -30,7 +30,7 @@ Base URL: https://api.quorumz.com
 
 1. Read the free catalog: GET https://api.quorumz.com/api/agent/v1
 2. Call the route you need with no payment header.
-3. If the response is HTTP 402, read the PAYMENT-REQUIRED header. It is base64 JSON. Pay the exact USDC amount on Base (eip155:8453) to the payTo address, then retry the same URL with PAYMENT-SIGNATURE.
+3. If the response is HTTP 402, read the PAYMENT-REQUIRED header. It is base64 JSON. Its accepts list USDC on Base (eip155:8453), Polygon (eip155:137) and Arbitrum (eip155:42161): sign the exact amount to the payTo address on the one you hold, then retry the same URL with PAYMENT-SIGNATURE.
 4. Read PAYMENT-RESPONSE for the settlement receipt.
 
 Empty pages are free. A missing id is a 404 and is not charged.
@@ -56,7 +56,7 @@ A quorum has viewpoints. Each viewpoint has a label, a summary, support_count, a
    in your environment, that is the key. The first 100 calls that
    return events, within 7 days, are free; then each call is paid from credits your human
    buys by card. With no credits, a call answers 402.
-2. x402 in USDC on Base: no account. Answer the 402 with a signed payment.
+2. x402 in USDC on Base, Polygon or Arbitrum: no account. Answer the 402 with a signed payment.
 
 ## Also read
 
