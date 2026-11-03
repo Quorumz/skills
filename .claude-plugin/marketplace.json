@@ -1,0 +1,12 @@
+{
+  "name": "quorumz",
+  "description": "Quorumz skills for agents",
+  "owner": { "name": "Quorumz", "url": "https://sense.quorumz.com/agents" },
+  "plugins": [
+    {
+      "name": "quorumz-news",
+      "source": "./",
+      "description": "Geo-tagged world news for agents, split into viewpoints with the posts behind each."
+    }
+  ]
+}

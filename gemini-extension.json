@@ -1,0 +1,14 @@
+{
+  "name": "quorumz-news",
+  "version": "1.0.0",
+  "description": "Geo-tagged world news for agents, split into viewpoints with the posts behind each. API key with a free 7-day trial, or x402 per call.",
+  "contextFileName": "GEMINI.md",
+  "settings": [
+    {
+      "name": "Quorumz API key",
+      "description": "From https://sense.quorumz.com/agents/keys (free 7-day trial). Leave empty to pay per call with x402.",
+      "envVar": "QUORUMZ_API_KEY",
+      "sensitive": true
+    }
+  ]
+}
