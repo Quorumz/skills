@@ -1,7 +1,7 @@
 ---
 name: quorumz-news
 description: Current geo-tagged world news for agents, split into viewpoints with a count of the media, social and on-the-ground posts behind each. Use when a user asks what people are saying about a country, conflict or public story, wants the distinct positions on a story, or wants an early signal ahead of the wider press. Pay per call with an API key (free 7-day trial) or with x402 in USDC on Base, Polygon or Arbitrum.
-version: 1.0.0
+version: 1.0.1
 metadata:
   openclaw:
     homepage: https://sense.quorumz.com/agents

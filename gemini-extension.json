@@ -1,6 +1,6 @@
 {
   "name": "quorumz-news",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Geo-tagged world news for agents, split into viewpoints with the posts behind each. API key with a free 7-day trial, or x402 per call.",
   "contextFileName": "GEMINI.md",
   "settings": [
