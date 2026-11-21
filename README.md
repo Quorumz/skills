@@ -1,6 +1,6 @@
 # Quorumz skills for agents
 
-[![skills.sh](https://skills.sh/b/quorumz/skills)](https://skills.sh/quorumz/skills)
+[![skills.sh](https://skills.sh/b/quorumz/skills)](https://skills.sh/quorumz/skills) [![mcptry](https://mcptry.com/badge/com.quorumz.api/sense)](https://mcptry.com/servers/com.quorumz.api/sense)
 
 `quorumz-news` gives an agent current, geo-tagged world news, split into viewpoints. Each story is a **quorum**: its distinct positions, each with a summary and the number of media, social and on-the-ground posts supporting it. Alpha signals flag stories ahead of the wider press.
 
