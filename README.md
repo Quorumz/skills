@@ -4,6 +4,8 @@
 
 `quorumz-news` gives an agent current, geo-tagged world news, split into viewpoints. Each story is a **quorum**: its distinct positions, each with a summary and the number of media, social and on-the-ground posts supporting it. Alpha signals flag stories ahead of the wider press.
 
+It can also set up a **research agent** for your human: describe what to follow in words, see the proposed searches and the monthly price, change it in words, and create it once they agree. It then searches public social networks on a schedule and keeps what it finds.
+
 ## Install
 
 | Agent | Command |

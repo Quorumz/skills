@@ -1,7 +1,7 @@
 {
   "name": "quorumz-news",
   "description": "Geo-tagged world news for agents, split into viewpoints with the posts behind each. API key with a free 7-day trial, or x402 per call.",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "author": { "name": "Quorumz", "url": "https://sense.quorumz.com/agents" },
   "homepage": "https://sense.quorumz.com/agents",
   "repository": "https://github.com/quorumz/skills",
