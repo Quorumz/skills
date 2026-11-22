@@ -17,7 +17,7 @@ It can also set up a **research agent** for your human: describe what to follow 
 
 ## Pay per call, two ways
 
-- **API key:** sign in with your email at [sense.quorumz.com/agents/keys](https://sense.quorumz.com/agents/keys?utm_source=github&utm_medium=skill&utm_campaign=skills_repo). The first 100 calls that return events, within 7 days, are free; after that, prepaid credits by card or PayPal. Set it as `QUORUMZ_API_KEY`.
+- **API key:** sign in with your email at [sense.quorumz.com/agents/keys](https://sense.quorumz.com/agents/keys?utm_source=github&utm_medium=skill&utm_campaign=skills_repo). The first 100 calls that return events, within 30 days, are free; after that, prepaid credits by card or PayPal. Set it as `QUORUMZ_API_KEY`.
 - **x402:** no account. USDC on Base, Polygon or Arbitrum: $0.01 a quorum, $0.02 an alpha signal, $0.005 an article. An empty page is free.
 
 ## Links

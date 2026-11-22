@@ -1,7 +1,7 @@
 ---
 name: quorumz-news
-description: Current geo-tagged world news for agents, split into viewpoints with a count of the media, social and on-the-ground posts behind each. Use when a user asks what people are saying about a country, conflict or public story, wants the distinct positions on a story, wants an early signal ahead of the wider press, or wants something followed over time by a research agent of its own. Pay per call with an API key (free 7-day trial) or with x402 in USDC on Base, Polygon or Arbitrum.
-version: 1.1.0
+description: Current geo-tagged world news for agents, split into viewpoints with a count of the media, social and on-the-ground posts behind each. Use when a user asks what people are saying about a country, conflict or public story, wants the distinct positions on a story, wants an early signal ahead of the wider press, or wants something followed over time by a research agent of its own. Pay per call with an API key (free 30-day trial) or with x402 in USDC on Base, Polygon or Arbitrum.
+version: 1.1.1
 metadata:
   openclaw:
     homepage: https://sense.quorumz.com/agents
@@ -9,7 +9,7 @@ metadata:
     envVars:
       - name: QUORUMZ_API_KEY
         required: false
-        description: API key from https://sense.quorumz.com/agents/keys (free 7-day trial). Without it, pay per call with x402.
+        description: API key from https://sense.quorumz.com/agents/keys (free 30-day trial). Without it, pay per call with x402.
 ---
 
 # Quorumz agent news
@@ -32,7 +32,7 @@ Base URL: https://api.quorumz.com
 2. Use an API key if you have one: when `QUORUMZ_API_KEY` is set in your environment, send it as
    `Authorization: Bearer <key>` on every call. With no key, ask your human to get a free one at
    https://sense.quorumz.com/agents/keys (sign in with an email and a 6-digit code, about a minute).
-   The first 100 calls that return events, within 7 days, are free; then each call is paid from
+   The first 100 calls that return events, within 30 days, are free; then each call is paid from
    credits your human buys by card. A key with nothing left answers 402 and says how to add credits.
 3. No key, but USDC on Base (eip155:8453), Polygon (eip155:137) or Arbitrum (eip155:42161): call the
    route with no payment header. It answers HTTP 402. Read the PAYMENT-REQUIRED header (base64 JSON),
@@ -40,7 +40,7 @@ Base URL: https://api.quorumz.com
    PAYMENT-SIGNATURE. PAYMENT-RESPONSE is the settlement receipt. No account is needed.
 
 Every 402 body also says, in plain words, how to go on (`message`, `get_started`). The catalog of
-routes and prices is free: GET https://api.quorumz.com/api/agent/v1. Empty pages are free. A missing id
+routes and prices is free: GET https://api.quorumz.com/api/agent/v1. No call costs more than $0.10, however many records it returns. Empty pages are free. A missing id
 is a 404 and is not charged.
 
 ## Routes
